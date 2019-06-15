@@ -3,6 +3,8 @@
 
 A golang implementation of [Nanobitcoin](https://github.com/acolytec3/nanobitcoin)
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/acolytec3/nanobitcoin-go)](https://goreportcard.com/report/github.com/acolytec3/nanobitcoin-go)
+
 ## Features
 
 * A dumb http server that gives you a fake blockchain
