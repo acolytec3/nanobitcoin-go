@@ -10,6 +10,7 @@ A golang implementation of [Nanobitcoin](https://github.com/acolytec3/nanobitcoi
 ## To-do list
 
 * Write a skeleton for tests
+* Add godoc stuff
 * Port the block schema from Nanobitcoin
 * Create methods to add transactions to a block
 * Port brute-force transaction validation from Nanobitcoin
