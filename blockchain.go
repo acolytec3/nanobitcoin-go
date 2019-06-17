@@ -5,7 +5,6 @@ import (
     "log"
     "net/http"
     "encoding/json"
-    "github.com/gorilla/mux"
 )
 
 type Block struct {
@@ -20,17 +19,13 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func chain(w http.ResponseWriter, r *http.Request){
-//    fmt.Fprintf(w, "There will be a blockchain here someday")
     json.NewEncoder(w).Encode(Blockchain)
     fmt.Println("/chain found")
 }
 func handleRequests() {
-    router := mux.NewRouter().StrictSlash(true)
-    router.HandleFunc("/", handler)
-    router.HandleFunc("/chain", chain)
-//    http.HandleFunc("/", handler)
-//    http.HandleFunc("/chain", chain)
-    log.Fatal(http.ListenAndServe(":8000", router))
+    http.HandleFunc("/", handler)
+    http.HandleFunc("/chain", chain)
+    log.Fatal(http.ListenAndServe(":8000", nil))
 
 }
 func main() {
