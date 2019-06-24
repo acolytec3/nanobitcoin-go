@@ -1,3 +1,5 @@
+https://travis-ci.org/acolytec3/nanobitcoin-go.svg?branch=master
+
 # Nanobitcoin-Go
 
 A golang implementation of [Nanobitcoin](https://github.com/acolytec3/nanobitcoin)
