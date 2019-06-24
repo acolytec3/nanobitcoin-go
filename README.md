@@ -1,6 +1,6 @@
 # Nanobitcoin-Go
 
-A golang implementation of [Nanobitcoin](https://github.com/acolytec3/nanobitcoin)
+A (someday)golang implementation of [Nanobitcoin](https://github.com/acolytec3/nanobitcoin)
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/acolytec3/nanobitcoin-go)](https://goreportcard.com/report/github.com/acolytec3/nanobitcoin-go)
 [![Build Status](https://travis-ci.org/acolytec3/nanobitcoin-go.svg?branch=master)](https://travis-ci.org/acolytec3/nanobitcoin-go)
@@ -18,7 +18,7 @@ A golang implementation of [Nanobitcoin](https://github.com/acolytec3/nanobitcoi
 * Create methods to add transactions to a block
 * Port brute-force transaction validation from Nanobitcoin
 * Define PoA consensus algorithm - to replace proof of work cuz even Go isn't fast enough for that nonsense
-* Make the note actually produce blocks on some regular basis
+* Make the node actually produce blocks on some regular basis
 * Integrate a database (maybe [bbolt](https://github.com/etcd-io/bbolt)) to store the blocks
 * Add routes that match [Nanobitcoin-Blockchain-Explorer](https://github.com/acolytec3/blockchain-explorer)
 * Accept transactions from [Nanobitcoin-Blockchain-Explorer](https://github.com/acolytec3/blockchain-explorer)
