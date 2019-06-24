@@ -5,10 +5,20 @@ import (
     "log"
     "net/http"
     "encoding/json"
+    "time"
 )
+
+type Transaction struct {
+    Sender string `json:"sender"`
+    Recipient string `json:"recipient"`
+    Amount float32 `json:"amount"` 
+}
 
 type Block struct {
     Index string `json:"index"`
+    Timestamp time.Time `json:"timestamp"`
+    Transactions []Transaction `json:"transactions"`
+    Previous_hash string `json:"previous_hash"`
 }
 
 var Blockchain []Block
@@ -30,7 +40,7 @@ func handleRequests() {
 }
 func main() {
     Blockchain = []Block{
-        Block{Index: "1"},
+        Block{Index: "1", Timestamp: time.Now()},
         Block{Index: "2"},
     }
     handleRequests()
